@@ -1,3 +1,7 @@
+## How can I apply this?
+
+- Well, put that [`antomuto`](https://github.com/antomuto4/My-AwesomeWM/tree/master/gtk_themes/antomuto) folder in your `/usr/share/themes` and you're ready to go! Just apply it with a program like lxappearance and you're done.
+
 ## How is this made?
 
 - This GTK theme is made using [Oomox](https://github.com/themix-project/oomox), specifically [this](https://www.flathub.org/apps/details/com.github.themix_project.Oomox) installation
