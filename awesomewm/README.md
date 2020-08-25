@@ -4,7 +4,7 @@
 
 # What will it look like?
 
-- I provided a [gif above](https://user-images.githubusercontent.com/56132390/90978991-09a35700-e552-11ea-9a07-3266a21396d5.gif) to show you what it will look like. But, to see how everything works in real-time.
+- I provided a [gif above](https://user-images.githubusercontent.com/56132390/90978991-09a35700-e552-11ea-9a07-3266a21396d5.gif) to show you what it will look like.
 
 # How do I set everything up?
 
