@@ -1,6 +1,6 @@
 ## How can I apply this?
 
-- Well, put that [`antomuto`](https://github.com/antomuto4/My-AwesomeWM/tree/master/gtk_themes/antomuto) folder in your `/usr/share/themes` and you're ready to go! Just apply it with a program like lxappearance and you're done.
+- Well, put that [`antomuto`](https://github.com/antomuto4/dotfiles/tree/master/gtk-antomuto/antomuto) folder in your `/usr/share/themes` and you're ready to go! Just apply it with a program like lxappearance and you're done.
 
 ## How is this made?
 
