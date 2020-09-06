@@ -11,6 +11,7 @@
 --/_/   \_\_/\_/ \___||___/\___/|_| |_| |_|\___|  \____\___/|_| |_|_| |_|\__, |
 --                                                                       |___/
 
+
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
@@ -63,7 +64,7 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "mytheme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xfce4-terminal"
+terminal = "terminator"
 editor = os.getenv("EDITOR") or "micro"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -89,9 +90,9 @@ awful.layout.layouts = {
     awful.layout.suit.max.fullscreen,
     awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
-    -- awful.layout.suit.corner.ne,
-    -- awful.layout.suit.corner.sw,
-    -- awful.layout.suit.corner.se,
+    --awful.layout.suit.corner.ne,
+    --awful.layout.suit.corner.sw,
+    --awful.layout.suit.corner.se,
 }
 -- }}}
 
@@ -186,7 +187,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- Each screen has its own tag table.
     awful.tag({ "1", "2", "3", "4", "5" }, s,
     --    awful.tag({ "1", "2", "3", "4", "5" }, s,
-     awful.layout.layouts[8])
+     awful.layout.layouts[10])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -577,6 +578,10 @@ awful.rules.rules = {
 	{ rule = {class = "code-oss" },
 	properties = { screen = 1, tag = "3" } },
 
+	--set Emacs
+	{rule = {class = "emacs"}, 
+	properties = {screen = 1, tag = "3"} },
+
 	
 -- Opacity on Application
 
@@ -589,12 +594,16 @@ awful.rules.rules = {
  	--properties = {opacity = 0.95} },
 	
 	--Terminal
-	{rule = {class = "xfce4-terminal"},
-	properties = {opacity = 0.85} },
+	--{rule = {class = "xfce4-terminal"},
+	--properties = {opacity = 0.85} },
  	
  	--Visual Studio Code
  	--{ rule = {class = "code-oss"},
  	--properties = {opacity = 1.0} },
+
+ 	--Emacs
+ 	{rule = {class = "emacs"},
+ 	properties = {opactiy = 0.95} },
 }
 -- }}}
 
@@ -674,9 +683,9 @@ awful.spawn.with_shell("discord")
 
 --Japanese
 
---awful.spawn.with_shell(terminal.. "localectl set-locale LANG=ja_JP.UTF-8")
+awful.spawn.with_shell(terminal.. "localectl set-locale LANG=ja_JP.UTF-8")
 
 --English
 
-awful.spawn.with_shell(terminal.."localectl set-locale LANG=en_US.UTF-8")
+--awful.spawn.with_shell(terminal.."localectl set-locale LANG=en_US.UTF-8")
 
