@@ -11,6 +11,7 @@
 --/_/   \_\_/\_/ \___||___/\___/|_| |_| |_|\___|  \____\___/|_| |_|_| |_|\__, |
 --                                                                       |___/
 
+
 ---------------------------
 -- Default awesome theme --
 ---------------------------
@@ -37,8 +38,8 @@ theme.fg_focus      = "#5F5F5F" -- 2
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
-theme.useless_gap   = dpi(10)
-theme.border_width  = dpi(2)
+theme.useless_gap   = dpi(5)
+theme.border_width  = dpi(1)
 theme.border_normal = "#FFFFFF"
 theme.border_focus  = "#5F5F5F" -- 2
 theme.border_marked = "#FFFFFF"
