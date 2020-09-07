@@ -1,10 +1,10 @@
  - Antomuto's AwesomeWM Configuration
 
-![simplescreenrecorder-2020-08-23](https://user-images.githubusercontent.com/56132390/90978991-09a35700-e552-11ea-9a07-3266a21396d5.gif)
+![simplescreenrecorder-2020-09-07](https://user-images.githubusercontent.com/56132390/92409222-22aa2b80-f140-11ea-8910-5f1c402e5db7.gif)
 
 # What will it look like?
 
-- I provided a [gif above](https://user-images.githubusercontent.com/56132390/90978991-09a35700-e552-11ea-9a07-3266a21396d5.gif) to show you what it will look like.
+- I provided a [gif above](https://user-images.githubusercontent.com/56132390/92409222-22aa2b80-f140-11ea-8910-5f1c402e5db7.gif) to show you what it will look like.
 
 # How do I set everything up?
 
@@ -52,9 +52,9 @@
 
 - [Here is a guide on how to Rice if you're interested.](https://youtu.be/ARKIwOlazKI) (The video is using i3WM but still works for other WM's.)
 
-## "Ricing" tools I used in the [gif](https://user-images.githubusercontent.com/56132390/90978991-09a35700-e552-11ea-9a07-3266a21396d5.gif)
+## "Ricing" tools I used in the [gif](https://user-images.githubusercontent.com/56132390/92409222-22aa2b80-f140-11ea-8910-5f1c402e5db7.gif)
 
-- Terminal: xfce4-terminal (0.85 opacity)
+- Terminal: Terminator (0.95 opacity)
 - [Pfetch](https://aur.archlinux.org/packages/pfetch-git/): printing out sysinfo
 - [Cli-Visualizer](https://aur.archlinux.org/packages/cli-visualizer/): audio visualizer
 
