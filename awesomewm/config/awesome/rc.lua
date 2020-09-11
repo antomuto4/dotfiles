@@ -673,11 +673,10 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 --Autostart Applications
 awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off")
-awful.spawn.with_shell("xfce4-power-manager-settings")
-awful.spawn.with_shell("xset s off")
+awful.spawn.with_shell("xfce4-power-manager")
+--awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
-awful.spawn.with_shell("discord")
 
 --Language Local
 
