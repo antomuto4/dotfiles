@@ -571,12 +571,12 @@ awful.rules.rules = {
 	properties = { screen = 1, tag = "4" } },
 
 	--Set Discord
-	{ rule = {class = "Discord" },
+	{ rule = {class = "discord" },
 	properties = { screen = 1, tag = "2" } },
 	
 	--Set Visual Studio Code
-	{ rule = {class = "code-oss" },
-	properties = { screen = 1, tag = "3" } },
+	--{ rule = {class = "code-oss" },
+	--properties = { screen = 1, tag = "3" } },
 
 	--set Emacs
 	{rule = {class = "emacs"}, 
@@ -590,8 +590,8 @@ awful.rules.rules = {
  	--properties = {opacity = 0.95} },
  	
  	--Discord
-	--{ rule = {class = "discord"}, 
- 	--properties = {opacity = 0.95} },
+	{ rule = {class = "discord"}, 
+ 	properties = {opacity = 0.95} },
 	
 	--Terminal
 	--{rule = {class = "xfce4-terminal"},
