@@ -1,11 +1,28 @@
  - Antomuto's AwesomeWM Configuration
+ 
+ # Tables:
+ 
+ * [What will it look like?](#what-will-it-look-like)
+ * [How do I set everything up?](#how-do-i-set-everything-up)
+ * [What goes where?](#what-goes-where)
+ * [.config/awesome](#configawesome)
+ * [Picom > Compton](#picom--compton)
+ * [Rofi](#rofi)
+ * [.bashrc](#bashrc)
+ * [So, What now?](#so-what-now)
+ * [What about more appearance changes?](#what-about-more-appearance-changes)
+ * [Ricing tools I used in the gif](#ricing-tools-i-used-in-the-gif)
+ * [New to AwesomeWM?](#new-to-awesomewm)
+ * [New to Tiling Window Managers?](#new-to-tiling-window-managers)
+ * [Screenshots](#screenshots)
 
 ![simplescreenrecorder-2020-09-12](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif)
 
 # What will it look like?
 
-- I provided a [gif above](![simplescreenrecorder-2020-09-12](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif)
-) to show you what it will look like.
+- I provided a [gif above](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif) to show you what it will look like.
+
+- However there will also be a [Screenshots](#screenshots) section where you can look at everything one by one. 
 
 # How do I set everything up?
 
@@ -53,8 +70,7 @@
 
 - [Here is a guide on how to Rice if you're interested.](https://youtu.be/ARKIwOlazKI) (The video is using i3WM but still works for other WM's.)
 
-## "Ricing" tools I used in the [gif](![simplescreenrecorder-2020-09-12](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif)
-)
+## "Ricing" tools I used in the [gif](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif)
 
 - Terminal: Alacritty (0.95 opacity)
 - [Screenfetch](https://github.com/KittyKatt/screenFetch) and [Pfetch](https://aur.archlinux.org/packages/pfetch-git/): printing out sysinfo
@@ -66,3 +82,14 @@
 
 ## New to Tiling Window Managers?
 - Check [how it works](https://youtu.be/qKtit_B7Keo) or if it's [really fitting](https://youtu.be/5n_rl9jWUMo) for you!
+
+## Screenshots
+
+![Screenshot_2020-09-12_11-22-51](https://user-images.githubusercontent.com/56132390/92992603-732cda80-f4ec-11ea-89b8-ceaf79c5e7a4.png)
+
+![Screenshot_2020-09-12_11-23-16](https://user-images.githubusercontent.com/56132390/92992625-95265d00-f4ec-11ea-8709-e3c6f29c61a0.png)
+
+![Screenshot_2020-09-12_11-23-29](https://user-images.githubusercontent.com/56132390/92992632-9c4d6b00-f4ec-11ea-8f8c-e63bcd3eca7e.png)
+
+![Screenshot_2020-09-12_11-23-52](https://user-images.githubusercontent.com/56132390/92992641-a8392d00-f4ec-11ea-8e13-1269cabc3a1f.png)
+
