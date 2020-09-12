@@ -1,5 +1,3 @@
-## out rename 'bashrc' to '.bashrc' and put at /home/user/
-
 #
 # ~/.bashrc
 #
@@ -88,8 +86,13 @@ if ${use_color} ; then
 	alias anilist='./ungoogled-chromium anilist.co'
 	alias spotify='./ungoogled-chromium open.spotify.com'
 	alias bitwarden='./ungoogled-chromium vault.bitwarden.com'
+    alias doom_refresh='~/.emacs.d/bin/doom sync'
+    alias doom_sync='~/.emacs.d/bin/doom sync'
+    alias pacman_orphans='sudo pacman -Qtdq | pacman -Rns -'
+    alias night_light='redshift 2500'
 
-	./pfetch-git/pkg/pfetch-git/usr/bin/pfetch
+	# ./pfetch-git/pkg/pfetch-git/usr/bin/pfetch
+	screenfetch -A Linux
 	
 else
 	if [[ ${EUID} == 0 ]] ; then
