@@ -154,3 +154,10 @@ ex ()
 }
 
 source /home/antom/.config/broot/launcher/bash/br
+
+
+# Japanese Input
+
+export GTK_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export QT_IM_MODULE=fcitx
