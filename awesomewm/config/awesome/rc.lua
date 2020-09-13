@@ -185,7 +185,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "1", "2", "3", "4", "5" }, s,
+    awful.tag({ "インターネット  ☕️ ", " メイル ✉️  ", " ターミナル  ", " 音楽 🎶 ", " ⛩ " }, s,
     --    awful.tag({ "1", "2", "3", "4", "5" }, s,
      awful.layout.layouts[10])
 
@@ -563,7 +563,10 @@ awful.rules.rules = {
      --Applications on what screen
 
      --Set Firefox to always map on the tag named "2" on screen 1.
-     { rule = { class = "Firefox" },
+     { rule = { class = "firefox" },
+       properties = { screen = 1, tag = "1" } },
+
+     { rule = { class = "ungoogled-chromium" },
        properties = { screen = 1, tag = "1" } },
 
 	--Set Spotify
@@ -590,8 +593,8 @@ awful.rules.rules = {
  	--properties = {opacity = 0.95} },
  	
  	--Discord
-	{ rule = {class = "discord"}, 
- 	properties = {opacity = 0.95} },
+	--{ rule = {class = "discord"}, 
+ 	--properties = {opacity = 0.95} },
 	
 	--Terminal
 	--{rule = {class = "xfce4-terminal"},
