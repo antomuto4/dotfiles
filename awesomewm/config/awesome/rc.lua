@@ -215,15 +215,15 @@ awful.screen.connect_for_each_screen(function(s)
 
 
     -- Create the wibox
-	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "70"})
+	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "99"})
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            mylauncher,
+            --mylauncher,
             s.mytaglist,
-            s.mypromptbox,
+            --s.mypromptbox,
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
@@ -685,7 +685,7 @@ awful.spawn.with_shell("nitrogen --restore")
 
 --Japanese
 
-awful.spawn.with_shell(terminal.. "localectl set-locale LANG=ja_JP.UTF-8")
+--awful.spawn.with_shell(terminal.. "localectl set-locale LANG=ja_JP.UTF-8")
 
 --English
 
