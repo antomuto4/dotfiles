@@ -11,6 +11,7 @@
  * [Picom > Compton](#picom--compton)
  * [Rofi](#rofi)
  * [.bashrc](#bashrc)
+ * [Betterlockscreen](#betterlockscreen)
  * [So, What now?](#so-what-now)
  * [What about more appearance changes?](#what-about-more-appearance-changes)
  * [Ricing tools I used in the gif](#ricing-tools-i-used-in-the-gif)
@@ -54,6 +55,26 @@
 ## .bashrc
 
 - I provided a bashrc file, make sure to make it hidden by renaming it to: [`.bashrc`](https://github.com/antomuto4/dotfiles/blob/master/bashrc) and putting it into your home directory. That's it. You don't have to do more then that.
+
+## Betterlockscreen
+
+- This piece of software is not mine, and the instructions will be directly copied from the original [repo](https://github.com/pavanjadhaw/betterlockscreen#installation). 
+
+`git clone https://github.com/pavanjadhaw/betterlockscreen`
+
+`cd betterlockscreen`
+
+`cp betterlockscreen ~/.local/bin/`
+
+- Now [install](https://github.com/pavanjadhaw/betterlockscreen#installation) some other garbage: 
+
+`sudo pacman -S imagemagick feh xorg-xrandr xorg-xdpyinfo`
+
+- Make sure Trizen is installed by following [this guide](https://newbloghosting.com/how-to-install-trizen-on-arch-linux/)
+
+`trizen -S i3lock-color`
+
+For betterlockscreen usage, refer to [this](https://github.com/pavanjadhaw/betterlockscreen#usage)
 
 ## So, What now?
 
