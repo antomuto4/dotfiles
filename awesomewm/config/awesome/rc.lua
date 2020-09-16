@@ -22,8 +22,10 @@ local awful = require("awful")
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
-local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
-local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
+
+-- MAKE SURE THE WIDGETS ARE INSTALLED AND LOCATED IN YOUR .config/awesome/ , 
+--local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+--local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
@@ -64,7 +66,11 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "mytheme.lua")
 
 -- This is used later as the default terminal and editor to run.
+
+-- CONFIGURE YOUR OWN PREFERED TERMINAL
 terminal = "alacritty"
+
+-- CONFIGURE YOUR OWN PREFERED EDITOR
 editor = os.getenv("EDITOR") or "micro"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -185,7 +191,8 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "インターネット  ☕️ ", " メイル ✉️  ", " ターミナル  ", " 音楽 🎶 ", " ⛩ " }, s,
+		-- MAKE SURE ja_jp FONTS ARE INSTALLED TO MAKE THIS RENDER
+    awful.tag({ "インターネット ☕️ ", " メール ✉️  ", " ターミナル  ", " 音楽 🎶 ", " ホーム ⛩ ", " エキストラ " }, s,
     --    awful.tag({ "1", "2", "3", "4", "5" }, s,
      awful.layout.layouts[10])
 
@@ -342,8 +349,12 @@ globalkeys = gears.table.join(
     -- Prompt
 
     awful.key({ modkey },            "r",     function ()
-    			awful.util.spawn("rofi -show run") end,
-              {description = "rofi run", group = "launcher"}),
+			
+		-- IF YOU PREFER ROFI, MAKE SURE TO CHANGE IT TO YOUR OWN LIKING
+			
+    		    awful.util.spawn("dmenu_run -fn 'Dina ttf 10px '") end,
+    		 -- awful.util.spawn("rofi -show") end,
+              {description = "dmenu run", group = "launcher"}),
 
     -- Discord
 
@@ -675,8 +686,11 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 --Autostart Applications
-awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off")
-awful.spawn.with_shell("xfce4-power-manager")
+
+-- USE YOUR OWN SCREEN RESOLUTION USING : "xrandr -s (available resolution)"
+
+--awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off")
+--awful.spawn.with_shell("xfce4-power-manager")
 --awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
