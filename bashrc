@@ -76,21 +76,17 @@ if ${use_color} ; then
 	fi
 
 	
-	alias ls='ls --color=auto'
+	alias ls='exa -al'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
 	alias ls="ls -aF"
 	alias check_shell="echo $0"
-	alias 4anime='./ungoogled-chromium 4anime.to'
-	alias anilist='./ungoogled-chromium anilist.co'
-	alias spotify='./ungoogled-chromium open.spotify.com'
-	alias bitwarden='./ungoogled-chromium vault.bitwarden.com'
     alias doom_refresh='~/.emacs.d/bin/doom sync'
     alias doom_sync='~/.emacs.d/bin/doom sync'
     alias pacman_orphans='sudo pacman -Qtdq | pacman -Rns -'
     alias night_light='redshift 2500'
-
+    alias emacs="emacsclient -c -a 'emacs'"
 	# ./pfetch-git/pkg/pfetch-git/usr/bin/pfetch
 	screenfetch -A Linux
 	
@@ -152,9 +148,6 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
-
-source /home/antom/.config/broot/launcher/bash/br
-
 
 # Japanese Input
 
