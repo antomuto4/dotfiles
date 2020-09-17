@@ -77,6 +77,7 @@ if ${use_color} ; then
 
 
 	# ls
+   
 	alias ls='exa -al'
 
     # other stuff
