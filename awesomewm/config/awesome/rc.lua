@@ -22,10 +22,8 @@ local awful = require("awful")
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
-
--- MAKE SURE THE WIDGETS ARE INSTALLED AND LOCATED IN YOUR .config/awesome/ , 
---local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
---local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
+local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
+local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
@@ -66,11 +64,7 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "mytheme.lua")
 
 -- This is used later as the default terminal and editor to run.
-
--- CONFIGURE YOUR OWN PREFERED TERMINAL
 terminal = "alacritty"
-
--- CONFIGURE YOUR OWN PREFERED EDITOR
 editor = os.getenv("EDITOR") or "micro"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -121,7 +115,7 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon,
                                      menu = mymainmenu })
 
 -- Menubar configuration
-menubar.utils.terminal = terminal -- Set the terminal for applications that require it
+menubar.utils.terminal = alacritty -- Set the terminal for applications that require it
 -- }}}
 
 -- Keyboard map indicator and switcher
@@ -191,9 +185,8 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-		-- MAKE SURE ja_jp FONTS ARE INSTALLED TO MAKE THIS RENDER
     awful.tag({ "インターネット ☕️ ", " メール ✉️  ", " ターミナル  ", " 音楽 🎶 ", " ホーム ⛩ ", " エキストラ " }, s,
-    --    awful.tag({ "1", "2", "3", "4", "5" }, s,
+       -- awful.tag({ "1", "2", "3", "4", "5" }, s,
      awful.layout.layouts[10])
 
     -- Create a promptbox for each screen
@@ -222,7 +215,8 @@ awful.screen.connect_for_each_screen(function(s)
 
 
     -- Create the wibox
-	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "99"})
+	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "99", height = "22"})
+	--s.mywibox = awful.wibar({ position = "bottom", screen = s, bg = beautiful.bg_normal .. "99"})
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -263,6 +257,7 @@ root.buttons(gears.table.join(
 -- }}}
 
 -- {{{ Key bindings
+
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
@@ -349,10 +344,7 @@ globalkeys = gears.table.join(
     -- Prompt
 
     awful.key({ modkey },            "r",     function ()
-			
-		-- IF YOU PREFER ROFI, MAKE SURE TO CHANGE IT TO YOUR OWN LIKING
-			
-    		    awful.util.spawn("dmenu_run -fn 'Dina ttf 10px '") end,
+    			awful.util.spawn("dmenu_run -fn 'Dina ttf 10px '") end,
     		 -- awful.util.spawn("rofi -show") end,
               {description = "dmenu run", group = "launcher"}),
 
@@ -389,6 +381,14 @@ globalkeys = gears.table.join(
       awful.key({modkey, "Shift"}, "u", function()
       awful.util.spawn("ungoogled-chromium")end,
       {description = "ungoogled-chromium run", group = "launcher"}),
+
+      awful.key({ modkey }, "b",
+                function ()
+                    myscreen = awful.screen.focused()
+                    myscreen.mywibox.visible = not myscreen.mywibox.visible
+                end,
+                {description = "toggle statusbar"}
+      ),
       	
       
     awful.key({ modkey }, "x",
@@ -686,11 +686,8 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 --Autostart Applications
-
--- USE YOUR OWN SCREEN RESOLUTION USING : "xrandr -s (available resolution)"
-
---awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off")
---awful.spawn.with_shell("xfce4-power-manager")
+awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off")
+awful.spawn.with_shell("xfce4-power-manager")
 --awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
@@ -704,4 +701,3 @@ awful.spawn.with_shell("nitrogen --restore")
 --English
 
 --awful.spawn.with_shell(terminal.."localectl set-locale LANG=en_US.UTF-8")
-
