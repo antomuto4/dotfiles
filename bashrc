@@ -75,19 +75,31 @@ if ${use_color} ; then
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
 
-	
+
+	# ls
 	alias ls='exa -al'
+
+    # other stuff
+
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
-	alias ls="ls -aF"
 	alias check_shell="echo $0"
+
+    # doom emacs
+
+    alias emacs="emacsclient -c -a 'emacs'"
     alias doom_refresh='~/.emacs.d/bin/doom sync'
     alias doom_sync='~/.emacs.d/bin/doom sync'
+
+    # pacman
+
     alias pacman_orphans='sudo pacman -Qtdq | pacman -Rns -'
     alias night_light='redshift 2500'
-    alias emacs="emacsclient -c -a 'emacs'"
-	# ./pfetch-git/pkg/pfetch-git/usr/bin/pfetch
+
+    # autostart
+
+    # ./pfetch-git/pkg/pfetch-git/usr/bin/pfetch
 	screenfetch -A Linux
 	
 else
