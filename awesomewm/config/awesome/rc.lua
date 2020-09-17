@@ -691,6 +691,7 @@ awful.spawn.with_shell("xfce4-power-manager")
 --awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
+awful.spawn.with_shell("xfce4-power-manager")
 
 --Language Local
 
