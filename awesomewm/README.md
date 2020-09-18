@@ -94,7 +94,7 @@ For betterlockscreen usage, refer to [this](https://github.com/pavanjadhaw/bette
 
 - [Here is a guide on how to Rice if you're interested.](https://youtu.be/ARKIwOlazKI) (The video is using i3WM but still works for other WM's.)
 
-## "Ricing" tools I used in the [gif](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif)
+## "Ricing" tools I used in the [gif](https://user-images.githubusercontent.com/56132390/93629802-26179f80-f9e9-11ea-8471-af225487006d.gif)
 
 - Terminal: Alacritty (0.95 opacity)
 - [Screenfetch](https://github.com/KittyKatt/screenFetch) and [Pfetch](https://aur.archlinux.org/packages/pfetch-git/): printing out sysinfo
