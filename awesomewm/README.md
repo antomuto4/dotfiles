@@ -19,11 +19,12 @@
  * [New to Tiling Window Managers?](#new-to-tiling-window-managers)
  * [Screenshots](#screenshots)
 
-![simplescreenrecorder-2020-09-12](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif)
+![simplescreenrecorder-2020-09-18 (1)](https://user-images.githubusercontent.com/56132390/93629802-26179f80-f9e9-11ea-8471-af225487006d.gif)
+
 
 # What will it look like?
 
-- I provided a [gif above](https://user-images.githubusercontent.com/56132390/92992263-0c0e2680-f4ea-11ea-8cb9-3d4f98aed81e.gif) to show you what it will look like.
+- I provided a [gif above](https://user-images.githubusercontent.com/56132390/93629802-26179f80-f9e9-11ea-8471-af225487006d.gif) to show you what it will look like.
 
 - However there will also be a [Screenshots](#screenshots) section where you can look at everything one by one. 
 
