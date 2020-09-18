@@ -108,11 +108,11 @@ For betterlockscreen usage, refer to [this](https://github.com/pavanjadhaw/bette
 
 ## Screenshots
 
-![Screenshot_2020-09-12_11-22-51](https://user-images.githubusercontent.com/56132390/92992603-732cda80-f4ec-11ea-89b8-ceaf79c5e7a4.png)
+![スクリーンショット 2020-09-18 19-26-01](https://user-images.githubusercontent.com/56132390/93627675-91f80900-f9e5-11ea-8ceb-6be71154cf12.png)
 
-![Screenshot_2020-09-12_11-23-16](https://user-images.githubusercontent.com/56132390/92992625-95265d00-f4ec-11ea-8709-e3c6f29c61a0.png)
+![スクリーンショット 2020-09-18 19-26-46](https://user-images.githubusercontent.com/56132390/93628078-3aa66880-f9e6-11ea-91b0-4d6d7f6c7f1c.png)
 
-![Screenshot_2020-09-12_11-23-29](https://user-images.githubusercontent.com/56132390/92992632-9c4d6b00-f4ec-11ea-8f8c-e63bcd3eca7e.png)
+![スクリーンショット 2020-09-18 19-27-47](https://user-images.githubusercontent.com/56132390/93628095-4560fd80-f9e6-11ea-9602-114d696f4d5c.png)
 
-![Screenshot_2020-09-12_11-23-52](https://user-images.githubusercontent.com/56132390/92992641-a8392d00-f4ec-11ea-8e13-1269cabc3a1f.png)
+![スクリーンショット 2020-09-18 19-26-25](https://user-images.githubusercontent.com/56132390/93628114-514cbf80-f9e6-11ea-8504-c8d0745dd2fb.png)
 
