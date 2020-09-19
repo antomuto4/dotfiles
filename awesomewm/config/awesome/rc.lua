@@ -603,27 +603,28 @@ awful.rules.rules = {
 	properties = {screen = 1, tag = "3"} },
 
 	
--- Opacity on Application
+-- opacity on Application
 
-	--Spotify
-	--{ rule = {class = "Spotify"}, 
- 	--properties = {opacity = 0.95} },
+	-- spotify
+
+	{ rule = {class = "com.spotify.Client"},
+ 	properties = {opacity = 0.95} },
  	
- 	--Discord
+ 	-- discord
+
 	--{ rule = {class = "discord"}, 
  	--properties = {opacity = 0.95} },
 	
-	--Terminal
-	--{rule = {class = "xfce4-terminal"},
-	--properties = {opacity = 0.85} },
- 	
- 	--Visual Studio Code
- 	--{ rule = {class = "code-oss"},
- 	--properties = {opacity = 1.0} },
+	-- alacritty
 
- 	--Emacs
- 	{rule = {class = "emacs"},
+	--{rule = {class = "alacritty"},
+	--properties = {opacity = 0.95} },
+ 	
+ 	-- emacs
+
+ 	{rule = {class = "emacs-27.1"},
  	properties = {opactiy = 0.95} },
+
 }
 -- }}}
 
