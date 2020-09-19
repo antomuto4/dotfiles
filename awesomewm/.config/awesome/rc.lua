@@ -697,7 +697,9 @@ awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output H
 awful.spawn.with_shell("xfce4-power-manager")
 --awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
-awful.spawn.with_shell("nitrogen --restore")
+--awful.spawn.with_shell("nitrogen --restore")
+--awful.spawn.with_shell("feh --bg-fill --randomize ~/.wallpapers/slideshow/")
+awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/green_nature/photo-1536147210925-5cb7a7a4f9fe.jpeg")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("fcitx")
 --Language Local
