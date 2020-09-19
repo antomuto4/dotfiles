@@ -12,6 +12,9 @@
 --                                                                       |___/
 
 
+-- NOTE: PLEASE MAKE SURE TO HAVE THE REQUIRED PROGRAMS INSTALLED TO USE THIS CODE
+-- IT MAY BE POSSIBLE THAT YOU'LL HAVE TO DELETE THE WIDGETS AND ADD THEM YOURSELF MANUALLY AS IT SEEMS TO BE A GLITCH
+
 -- If LuaRocks is installed, make sure that packages installed through it are
 -- found (e.g. lgi). If LuaRocks is not installed, do nothing.
 pcall(require, "luarocks.loader")
