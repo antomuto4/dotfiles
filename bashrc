@@ -77,7 +77,7 @@ if ${use_color} ; then
 
 
 	# ls
-   
+
 	alias ls='exa -al'
 
     # other stuff
@@ -89,7 +89,7 @@ if ${use_color} ; then
 
     # doom emacs
 
-    alias emacs="emacsclient -c -a 'emacs'"
+    alias emacs="emacs-27.1"
     alias doom_refresh='~/.emacs.d/bin/doom sync'
     alias doom_sync='~/.emacs.d/bin/doom sync'
 
@@ -97,6 +97,10 @@ if ${use_color} ; then
 
     alias pacman_orphans='sudo pacman -Qtdq | pacman -Rns -'
     alias night_light='redshift 2500'
+
+    # spotify
+
+    alias spotify='flatpak run com.spotify.Client'
 
     # autostart
 
