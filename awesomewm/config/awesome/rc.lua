@@ -185,7 +185,10 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "インターネット ☕️ ", " メール ✉️  ", " ターミナル  ", " 音楽 🎶 ", " ホーム ⛩ ", " エキストラ " }, s,
+    awful.tag({ "インターネット ☕️ ", " メール ✉️  ", " ターミナル  ", " やることリスト 📚 ", " 音楽 🎶 ",  " エキストラ " , " ホーム ⛩ " }, s,
+
+    -- English translation:
+    -- Internet (1), Messages (2), Terminal (3), To-Do List (4), Music (5), Extra (6), Home Menu (7)
        -- awful.tag({ "1", "2", "3", "4", "5" }, s,
      awful.layout.layouts[10])
 
@@ -692,7 +695,7 @@ awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("picom --config ~/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("xfce4-power-manager")
-
+awful.spawn.with_shell("fcitx")
 --Language Local
 
 --Japanese
