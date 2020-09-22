@@ -81,17 +81,17 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
     awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
+    --awful.layout.suit.tile,
+    --awful.layout.suit.tile.left,
+    --awful.layout.suit.tile.bottom,
+    --awful.layout.suit.tile.top,
+    --awful.layout.suit.fair,
+    --awful.layout.suit.fair.horizontal,
+    --awful.layout.suit.spiral,
+    --awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
-    awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier,
+    --awful.layout.suit.max.fullscreen,
+    --awful.layout.suit.magnifier,
     awful.layout.suit.corner.nw,
     --awful.layout.suit.corner.ne,
     --awful.layout.suit.corner.sw,
@@ -193,7 +193,7 @@ awful.screen.connect_for_each_screen(function(s)
     -- English translation:
     -- Internet (1), Messages (2), Terminal (3), To-Do List (4), Music (5), Extra (6), Home Menu (7)
        -- awful.tag({ "1", "2", "3", "4", "5" }, s,
-     awful.layout.layouts[10])
+     awful.layout.layouts[2])
 
     -- Create a promptbox for each screen
     s.mypromptbox = awful.widget.prompt()
@@ -221,7 +221,7 @@ awful.screen.connect_for_each_screen(function(s)
 
 
     -- Create the wibox
-	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "99", height = "22"})
+	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "95", height = "22"})
 	--s.mywibox = awful.wibar({ position = "bottom", screen = s, bg = beautiful.bg_normal .. "99"})
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -234,7 +234,7 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
-        	spotify_widget({
+            spotify_widget({
         	font = 'Dina ttf 10px 9'	
         	}),
         	volumebar_widget({
@@ -579,27 +579,27 @@ awful.rules.rules = {
      --
      --Applications on what screen
 
-     --Set Firefox to always map on the tag named "2" on screen 1.
+     -- Set Firefox to always map on the tag named "2" on screen 1.
+
      { rule = { class = "firefox" },
        properties = { screen = 1, tag = "1" } },
 
      { rule = { class = "ungoogled-chromium" },
        properties = { screen = 1, tag = "1" } },
 
-	--Set Spotify
+	-- set spotify
+
 	{ rule = {class = "Spotify" },
 	properties = { screen = 1, tag = "4" } },
 
-	--Set Discord
+	-- set discord
+
 	{ rule = {class = "discord" },
 	properties = { screen = 1, tag = "2" } },
-	
-	--Set Visual Studio Code
-	--{ rule = {class = "code-oss" },
-	--properties = { screen = 1, tag = "3" } },
 
-	--set Emacs
-	{rule = {class = "emacs"}, 
+	-- set emacs
+
+	{rule = {class = "emacs-27.1"},
 	properties = {screen = 1, tag = "3"} },
 
 	
