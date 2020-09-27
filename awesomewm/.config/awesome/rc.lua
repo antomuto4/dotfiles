@@ -26,7 +26,8 @@ require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
 local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
-local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
+local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+--local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
@@ -188,7 +189,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    awful.tag({ "インターネット ☕️ ", " メール ✉️  ", " ターミナル  ", " やることリスト 📚 ", " 音楽 🎶 ",  " エキストラ " , " ホーム ⛩ " }, s,
+    awful.tag({ "インターネット ", " メール ", " ターミナル ", " やることリスト ", " 音楽 ",  " エキストラ " , " ホーム " }, s,
 
     -- English translation:
     -- Internet (1), Messages (2), Terminal (3), To-Do List (4), Music (5), Extra (6), Home Menu (7)
@@ -221,7 +222,7 @@ awful.screen.connect_for_each_screen(function(s)
 
 
     -- Create the wibox
-	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "95", height = "22"})
+	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal .. "85", height = "21"})
 	--s.mywibox = awful.wibar({ position = "bottom", screen = s, bg = beautiful.bg_normal .. "99"})
     -- Add widgets to the wibox
     s.mywibox:setup {
@@ -234,14 +235,10 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
-            spotify_widget({
-        	font = 'Dina ttf 10px 9'	
-        	}),
-        	volumebar_widget({
-        	main_color = '#ffffff',
-			mute_color = '#0a0d0c',	
-        	}),
-        	require("battery-widget"){},
+           -- spotify_widget({
+        	--font = 'Dina ttf 10px 9'	
+        	--}),
+        	volumebar_widget(),
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
             wibox.widget.systray(),
@@ -622,8 +619,8 @@ awful.rules.rules = {
  	
  	-- emacs
 
- 	{rule = {class = "emacs-27.1"},
- 	properties = {opactiy = 0.95} },
+ 	{rule = {class = "emacs"},
+ 	properties = {opactiy = 0.85} },
 
 }
 -- }}}
@@ -697,9 +694,9 @@ awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output H
 awful.spawn.with_shell("xfce4-power-manager")
 --awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
---awful.spawn.with_shell("nitrogen --restore")
+awful.spawn.with_shell("nitrogen --restore")
 --awful.spawn.with_shell("feh --bg-fill --randomize ~/.wallpapers/slideshow/")
-awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/green_nature/photo-1536147210925-5cb7a7a4f9fe.jpeg")
+--awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/green_nature/photo-1536147210925-5cb7a7a4f9fe.jpeg")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("fcitx")
 --Language Local
