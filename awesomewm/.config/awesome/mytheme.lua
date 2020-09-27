@@ -27,22 +27,24 @@ local theme = {}
 
 theme.font          = "Rainy Hearts 11"
 
-theme.bg_normal     = "#3B4252" -- 2
-theme.bg_focus      = "#2E3440" -- 1
-theme.bg_urgent     = "#3B4252"
-theme.bg_minimize   = "#2E3440"
+theme.bg_normal     = "#3b4252" -- 2
+theme.bg_focus      = "#434c5e" -- 4
+theme.bg_urgent     = "#4c566a" -- 5
+theme.bg_minimize   = "#3b4252" -- 3
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#FFFFFF"
-theme.fg_focus      = "#5F5F5F" -- 2
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+--theme.fg_normal     = "#4c566a" -- 5
+theme.fg_normal     = "#e5e9f0" -- 8
+--theme.fg_focus      = "#616e88" -- 6
+theme.fg_focus      = "#e5e9f0" -- 8
+theme.fg_urgent     = "#e5e9f0"
+theme.fg_minimize   = "#e5e9f0"
 
 theme.useless_gap   = dpi(3)
 theme.border_width  = dpi(1)
-theme.border_normal = "#FFFFFF"
-theme.border_focus  = "#2E3440" -- 2
-theme.border_marked = "#4C566A"
+theme.border_normal = "#3b4252" -- 2
+theme.border_focus  = "#e5e9f0" -- 8
+theme.border_marked = "#3b4252" -- 2
 
 -- There are other variable sets
 -- overriding the default one when
