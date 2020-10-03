@@ -7,7 +7,7 @@ Since the input process is difficult for no reason and I struggled with it for a
 `$ pacman -S adobe-source-han-sans-jp-fonts otf-ipafont`
 
 ### Step 2: Install the actual program
-`$ pacman -S fcitx fcitx-mozc fcitx-gtk2 fcitx=gtk3`
+`$ pacman -S fcitx fcitx-mozc fcitx-gtk2 fcitx-gtk3`
 
 ### Step 3: Make a .xprofile file in your home directory
 
