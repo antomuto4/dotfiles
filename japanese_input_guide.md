@@ -37,7 +37,7 @@ All the way on the bottom, write:
 `export QT_IM_MODULE=fcitx`
 
 
-### Step 5: Install the actual input stuff
+### Step 4.5: Settings your actual PC language (Not needed)
 
 go into `/etc/locale.gen`
 
@@ -49,8 +49,10 @@ then run the command in your terminal:
 
 (If that didn't work, go back into your `/etc/locale.gen` and delete the extra UTF-8 that's on the ja_JP line.)
 
-### Step 6: Reboot
+### Step 5: Reboot
 
-### Step 7: Usage
+### Step 6: Usage
 
 launch fcitx and on the top right, you should see a keyboard. Right click on that and whenever you want to type in Japanese, select the `mozc` option, and type. 
+
+A hotkey used to switch keyboards is `ctrl + space`

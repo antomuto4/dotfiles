@@ -19,21 +19,18 @@
  * [New to Tiling Window Managers?](#new-to-tiling-window-managers)
  * [Screenshots](#screenshots)
 
-![simplescreenrecorder-2020-09-18 (1)](https://user-images.githubusercontent.com/56132390/93629802-26179f80-f9e9-11ea-8471-af225487006d.gif)
-
 
 # What will it look like?
 
-- I provided a [gif above](https://user-images.githubusercontent.com/56132390/93629802-26179f80-f9e9-11ea-8471-af225487006d.gif) to show you what it will look like.
 
-- However there will also be a [Screenshots](#screenshots) section where you can look at everything one by one. 
+- There will  be a [Screenshots](#screenshots) section where you can look at everything one by one. 
 
 # How do I set everything up?
 
 # What goes where?
 
 ## .config/awesome
-- It is possible that when you go into your `.config` folder, that there is no `awesome` folder present, if so. Make one yourself. and import the [`mytheme.lua` and `rc.lua` files](https://github.com/antomuto4/dotfiles/tree/master/awesomewm/config) in that awesome folder.
+- It is possible that when you go into your `.config` folder, that there is no `awesome` folder present, if so. Make one yourself. and import the [`mytheme.lua` and `rc.lua` files](https://gitlab.com/antomuto4/dotfiles/-/tree/master/awesomewm/.config/awesome) in that awesome folder.
 
 
 - ![Screenshot_2020-08-24_15-08-32](https://user-images.githubusercontent.com/56132390/91048272-b7c70380-e61b-11ea-9c0e-a2a016312882.png)
@@ -45,17 +42,17 @@
 
 ## Picom > Compton
 
-- My picom configuration is located in the `/home/` folder. Put that [`picom.conf`](https://github.com/antomuto4/dotfiles/blob/master/picom.conf) into your home directory and you're ready to go.
+- My picom configuration is located in the `/home/` folder. Put that [`picom.conf`](https://gitlab.com/antomuto4/dotfiles/-/blob/master/picom.conf) into your home directory and you're ready to go.
 
 ## Rofi
 
-- I took a preset from the default Rofi colorschemes and modified the colors of it myself. You can find my colorscemes of Rofi in the `/rofi_colorscheme/` and put that [`slateCustomized.rasi`](https://github.com/antomuto4/dotfiles/blob/master/rofi/slateCustomized.rasi) file into your `/usr/share/rofi/themes` (NOTE: ROFI HAS TO BE INSTALLED, AND WILL BE AUTO-INSTALLED WITH THE SCRIPT I PROVIDED.)
+- I took a preset from the default Rofi colorschemes and modified the colors of it myself. You can find my colorscemes of Rofi in the `/rofi_colorscheme/` and put that [`slateCustomized.rasi`](https://gitlab.com/antomuto4/dotfiles/-/blob/master/rofi/slateCustomized.rasi) file into your `/usr/share/rofi/themes` (NOTE: ROFI HAS TO BE INSTALLED, AND WILL BE AUTO-INSTALLED WITH THE SCRIPT I PROVIDED.)
 - Now modify your rofi config for that colorscheme. Edit the file located in: `/.config/rofi/config`, and replace that line with:
 `rofi.theme: /usr/share/rofi/themes/slateCustomized.rasi`
 
 ## .bashrc
 
-- I provided a bashrc file, make sure to make it hidden by renaming it to: [`.bashrc`](https://github.com/antomuto4/dotfiles/blob/master/bashrc) and putting it into your home directory. That's it. You don't have to do more then that.
+- I provided a bashrc file, make sure to make it hidden by renaming it to: [`.bashrc`](https://gitlab.com/antomuto4/dotfiles/-/blob/master/.bashrc) and putting it into your home directory. That's it. You don't have to do more then that.
 
 ## Betterlockscreen
 
@@ -79,7 +76,7 @@ For betterlockscreen usage, refer to [this](https://github.com/pavanjadhaw/bette
 
 ## So, What now?
 
-- Welp, nothing! You're ready to go! I provided some wallpapers in the [`/wallpapers/`](https://github.com/antomuto4/dotfiles/tree/master/wallpapers) folder, if you're interested in picking something, you're free to do so. Obviously I did not create them, credit goes to the Artists/Photographers.
+- Welp, nothing! You're ready to go! I provided some wallpapers in the [`/wallpapers/`](https://gitlab.com/antomuto4/dotfiles/-/tree/master/.wallpapers) folder, if you're interested in picking something, you're free to do so. Obviously I did not create them, credit goes to the Artists/Photographers.
 
 ## What about more appearance changes?
 
@@ -87,17 +84,17 @@ For betterlockscreen usage, refer to [this](https://github.com/pavanjadhaw/bette
 
 - Other than that - changing the theme of your AwesomeWM itself can be edited and motified in your `.config/awesome/mytheme.lua` file. Change it into the colors you'd like for your system and there you go. Feel free to also change the transitions if you do not like them. They are available in the [`picom.conf`](https://github.com/antomuto4/dotfiles/tree/master/awesomewm#picom--compton) step I provided earlier.
 
-- I made a [GTK Theme myself](https://github.com/antomuto4/dotfiles/tree/master/gtk-antomuto) that fits with the current wallpaper. Move the folder to `/usr/share/themes` and modify your theme in `lxappearance` to `antomuto`.
+- I made a [GTK Theme myself](https://gitlab.com/antomuto4/dotfiles/-/tree/master/gtk-antomuto) that fits with the current wallpaper. Move the folder to `/usr/share/themes` and modify your theme in `lxappearance` to `antomuto`.
 
 - ![Screenshot_2020-08-24_15-11-31](https://user-images.githubusercontent.com/56132390/91048545-1ee4b800-e61c-11ea-8e71-672566739187.png)
 
 
 - [Here is a guide on how to Rice if you're interested.](https://youtu.be/ARKIwOlazKI) (The video is using i3WM but still works for other WM's.)
 
-## "Ricing" tools I used in the [gif](https://user-images.githubusercontent.com/56132390/93629802-26179f80-f9e9-11ea-8471-af225487006d.gif)
+## "Ricing" tools I use in [#Screenshots](#screenshots) and in daily usage
 
-- Terminal: Alacritty (0.95 opacity)
-- [Screenfetch](https://github.com/KittyKatt/screenFetch) and [Pfetch](https://aur.archlinux.org/packages/pfetch-git/): printing out sysinfo
+- Terminal: Alacritty (1.0 opacity)
+- [Screenfetch](https://github.com/KittyKatt/screenFetch), [Pfetch](https://aur.archlinux.org/packages/pfetch-git/) and [Neofetch](https://github.com/dylanaraps/neofetch): printing out sysinfo
 - [Cli-Visualizer](https://aur.archlinux.org/packages/cli-visualizer/): audio visualizer
 
 ## New to AwesomeWM?
@@ -108,12 +105,9 @@ For betterlockscreen usage, refer to [this](https://github.com/pavanjadhaw/bette
 - Check [how it works](https://youtu.be/qKtit_B7Keo) or if it's [really fitting](https://youtu.be/5n_rl9jWUMo) for you!
 
 ## Screenshots
+![Screenshot_2020-10-10_17-59-17](/uploads/ab83e8064a2bbaab5e1d664e567c5735/Screenshot_2020-10-10_17-59-17.png)
 
-![スクリーンショット 2020-09-18 19-26-01](https://user-images.githubusercontent.com/56132390/93627675-91f80900-f9e5-11ea-8ceb-6be71154cf12.png)
+![Screenshot_2020-10-10_15-21-05](/uploads/f5eb38e424ab0d5e4b32ad1fab574225/Screenshot_2020-10-10_15-21-05.png)
 
-![スクリーンショット 2020-09-18 19-26-46](https://user-images.githubusercontent.com/56132390/93628078-3aa66880-f9e6-11ea-91b0-4d6d7f6c7f1c.png)
-
-![スクリーンショット 2020-09-18 19-27-47](https://user-images.githubusercontent.com/56132390/93628095-4560fd80-f9e6-11ea-9602-114d696f4d5c.png)
-
-![スクリーンショット 2020-09-18 19-26-25](https://user-images.githubusercontent.com/56132390/93628114-514cbf80-f9e6-11ea-8504-c8d0745dd2fb.png)
+![Screenshot_2020-10-10_15-22-24](/uploads/3481bcc322f5ff08e702ccd842904fc9/Screenshot_2020-10-10_15-22-24.png)
 
