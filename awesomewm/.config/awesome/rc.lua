@@ -68,7 +68,7 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. "mytheme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "micro"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
@@ -688,14 +688,13 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --Autostart Applications
 --awful.spawn.with_shell("xrandr --output eDP1 --off --output DP1 --off --output HDMI1 --off --output HDMI2 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off")
 awful.spawn.with_shell("./.screenlayout/tv-only.sh")
-awful.spawn.with_shell("xfce4-power-manager")
 --awful.spawn.with_shell("xset s off")
 awful.spawn.with_shell("picom --config ~/picom.conf")
 awful.spawn.with_shell("nitrogen --restore")
 --awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/manga/1001068.png")
 --awful.spawn.with_shell("fcitx")
 --awful.spawn.with_shell("./.autostart/autostart.sh")
-awful.spawn.with_shell("sudo virsh net-start default")
+--awful.spawn.with_shell("sudo virsh net-start default")
 --Language Local
 
 --Japanese
