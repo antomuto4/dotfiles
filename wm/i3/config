@@ -30,7 +30,7 @@ bindsym $mod+Shift+c kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec rofi -show run
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec dmenu_run -nb "#0b0b0c" -nf "#575367" -sb "#8e5872"
 
 # change focus
 bindsym $mod+j focus left
