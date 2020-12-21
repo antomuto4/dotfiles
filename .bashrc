@@ -89,6 +89,7 @@ if ${use_color} ; then
 	alias sdn='shutdown now'
     	alias comp='./.scripts/compton'
 	alias cls='clear'
+	alias pdf='zathura'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
