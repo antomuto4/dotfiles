@@ -75,7 +75,8 @@ if ${use_color} ; then
 	fi
 
 	# aliases
-	pfetch
+	neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg # requires jp2a and imagemagick
+	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
 	alias ls='exa -al'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
