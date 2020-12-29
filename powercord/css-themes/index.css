@@ -5,15 +5,15 @@
     --background-primary: #0b0b0c;
     --channeltextarea-background: #0b0b0c;
     --background-accent: #0b0b0c;
-    --background-modifier-hover: #8e5872;
-    --background-modifier-active: #8e5872;
-    --background-modifier-selected: #8e5872;
+    --background-modifier-hover: #434c5e;
+    --background-modifier-active: #434c5e;
+    --background-modifier-selected: #434c5e;
     --deprecated-card-bg: #0b0b0c;
     --background-floating: #0b0b0c;
-    --deprecated-quickswitcher-input-background:#8e5872;
+    --deprecated-quickswitcher-input-background:#3b4252;
     --scrollbar-auto-thumb: #0b0b0c;
-    --scrollbar-auto-track: #8e5872;
+    --scrollbar-auto-track: #434c5e;
     --scrollbar-thin-thumb: #0b0b0c;
-    --spotify-color: #8e5872;
+    --spotify-color: #3b4252;
     --elevation-low: none;
 }
