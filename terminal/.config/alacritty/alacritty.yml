@@ -12,8 +12,8 @@ colors:
     background: '#0b0b0c'
     foreground: '#aec7df'
 
-  normal:    # vim colorscheme
-    black:   '#2e3440'
+  normal:    # vim colorscheme; slightly changed
+    black:   '#0b0b0c'
     red:     '#3b4252'
     green:   '#3b4252'
     yellow:  '#434c5e'
