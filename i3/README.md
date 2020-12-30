@@ -1,7 +1,6 @@
 # i3
 ## Where should I move all of this stuff?
-- Move this `i3` folder to your `.config/` directory.
-- However, move out the `polybar` folder as well, in `.config/`
+- Move the `config` file to your `.config/i3/` directory.
 
 ### Screenshot
 
