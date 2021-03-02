@@ -2,25 +2,26 @@
 
 font:
   normal:
-    family: Dina ttf 10px
+    #family: Dina ttf 10px
+    family: Terminus
     style: Regular
 
-  size: 4.0
+  size: 4.5
 
 colors:
   primary:
-    background: '#0b0b0c'
-    foreground: '#aec7df'
+    background: '#282a36'
+    foreground: '#f8f8f2'
 
-  normal:    # vim colorscheme; slightly changed
-    black:   '#0b0b0c'
-    red:     '#3b4252'
-    green:   '#3b4252'
-    yellow:  '#434c5e'
-    blue:    '#4c566a'
-    magenta: '#616e88'
-    cyan:    '#d8dee9'
-    white:   '#e5e9f0'
+  normal:
+    black:   '#44475a'
+    red:     '#ff5555'
+    green:   '#50fa7b'
+    yellow:  '#f1fa8c'
+    blue:    '#8be9fd'
+    magenta: '#bd93f9'
+    cyan:    '#ffb86c'
+    white:   '#f8f8f2'
 
   bright:
     black:   '#8fbcbb'
@@ -31,5 +32,3 @@ colors:
     magenta: '#d08770'
     cyan:    '#ebcb8b'
     white:   '#a3be8c'
-
-background_opacity: 0.95
