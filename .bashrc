@@ -1,6 +1,5 @@
 # ~/.bashrc
 
-
 [[ $- != *i* ]] && return
 
 colors() {
@@ -67,26 +66,32 @@ if ${use_color} ; then
 			eval $(dircolors -b /etc/DIR_COLORS)
 		fi
 	fi
-
 	if [[ ${EUID} == 0 ]] ; then
 		PS1='\[\033[01;31m\][\h\[\033[01;36m\] \W\[\033[01;31m\]]\$\[\033[00m\] '
 	else
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
-	#aliases
-        screenfetch
-	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
-        alias ls='ls -la'
-        alias grep='grep --colour=auto'
-        alias egrep='egrep --colour=auto'
-        alias fgrep='fgrep --colour=auto'
-        alias check_shell="echo $0"
-        alias sdn='shutdown now'
-        alias vim='nvim'
 
-        #gentoo specific
-        alias emerge@world='emerge --ask --changed-use --deep @world'
-        alias emerge='emerge -aq'
+	# aliases
+	#neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg # requires jp2a and imagemagick
+	screenfetch
+	acpi
+	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
+	alias ls='ls -la'
+	alias grep='grep --colour=auto'
+	alias egrep='egrep --colour=auto'
+	alias fgrep='fgrep --colour=auto'
+	alias check_shell="echo $0"
+	alias sdn='shutdown now'
+	alias vim='nvim'
+	alias mpv='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"'
+	alias gpg-create='gpg -c --no-symkey-cache --cipher-algo AES256'
+
+	#gentoo specific
+	alias emerge@world='emerge --ask --changed-use --deep @world && emerge -uD --newuse @world && emerge @module-rebuild'
+	alias emerge@worldtime='emerge -pU @world | genlop --pretend'
+	alias list='qlist -IRv'
+	alias emerge='emerge -aq'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
@@ -117,6 +122,9 @@ shopt -s checkwinsize
 shopt -s expand_aliases
 
 # export QT_SELECT=4
+
+export PATH="${PATH}:${HOME}/.local/bin/"
+
 
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
