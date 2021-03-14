@@ -86,6 +86,7 @@ if ${use_color} ; then
 	alias vim='nvim'
 	alias mpv='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"'
 	alias gpg-create='gpg -c --no-symkey-cache --cipher-algo AES256'
+	alias nvidia-run='env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia'
 
 	#gentoo specific
 	alias emerge@world='emerge --ask --changed-use --deep @world && emerge -uD --newuse @world && emerge @module-rebuild'
