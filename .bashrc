@@ -1,5 +1,4 @@
 # ~/.bashrc
-
 [[ $- != *i* ]] && return
 
 colors() {
@@ -74,7 +73,7 @@ if ${use_color} ; then
 
 	# aliases
 	#neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg # requires jp2a and imagemagick
-	screenfetch
+	pfetch
 	acpi
 	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
 	alias ls='ls -la'
@@ -87,12 +86,17 @@ if ${use_color} ; then
 	alias mpv='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"'
 	alias gpg-create='gpg -c --no-symkey-cache --cipher-algo AES256'
 	alias nvidia-run='env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia'
+	alias filesize='du -sh'
+	alias ffmpeg-recordscreen='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -vb 20M out.mp4'
+	alias ffmpeg-recordmic='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -f alsa -i hw:0 -vb 20M out.mp4'
 
 	#gentoo specific
-	alias emerge@world='emerge --ask --changed-use --deep @world && emerge -uD --newuse @world && emerge @module-rebuild'
+	alias emerge@world='emerge -uDN @world && emerge @module-rebuild'
 	alias emerge@worldtime='emerge -pU @world | genlop --pretend'
 	alias list='qlist -IRv'
 	alias emerge='emerge -aq'
+	alias qdepends='qdepends -Q '%{CAT}/%{PN}:%{SLOT}' ^'
+	alias emerge-conflict='emerge --update --deep --with-bdeps=y --newuse'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
