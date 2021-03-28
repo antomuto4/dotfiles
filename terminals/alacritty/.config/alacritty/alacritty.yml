@@ -2,56 +2,34 @@
 
 font:
   normal:
-    family: inconsolata
-    style: Regular
+    family: Iosevka
+    style: Light
 
   size: 4
 
-#colors:
-#primary:
-#    background: '#282a36'
-#    foreground: '#f8f8f2'
-
-#  normal:
-#    black:   '#44475a'
-#    red:     '#ff5555'
-#    green:   '#50fa7b'
-#    yellow:  '#f1fa8c'
-#    blue:    '#8be9fd'
-#    magenta: '#bd93f9'
-#    cyan:    '#ffb86c'
-#    white:   '#f8f8f2'
-
-#  bright:
-#    black:   '#8fbcbb'
-#    red:     '#88c0d0'
-#    green:   '#81a1c1'
-#    yellow:  '#5e81ac'
-#    blue:    '#bf616a'
-#    magenta: '#d08770'
-#    cyan:    '#ebcb8b'
-#    white:   '#a3be8c'
-
 colors:
   primary:
-    background: '#282A36'
-    foreground: '#F8F8F2'
+    background: '#282a36'
+    foreground: '#f8f8f2'
  
-    normal:
+  # Normal colors
+  normal:
     black:   '#000000'
-    red:     '#50FA7B'
-    green:   '#F1FA8C'
-    yellow:  '#BD93F9'
-    blue:    '#FF79C6'
-    magenta: '#8BE9FD'
-    cyan:    '#BFBFBF'
-    white:   '#4D4D4D'
+    red:     '#ff5555'
+    green:   '#50fa7b'
+    yellow:  '#f1fa8c'
+    blue:    '#caa9fa'
+    magenta: '#ff79c6'
+    cyan:    '#8be9fd'
+    white:   '#bfbfbf'
+
+  # Bright colors
   bright:
-    black:   '0x4d4d4d'
-    red:     '0xff6e67'
-    green:   '0x5af78e'
-    yellow:  '0xf4f99d'
-    blue:    '0xcaa9fa'
-    magenta: '0xff92d0'
-    cyan:    '0x9aedfe'
-    white:   '0xe6e6e6'
+    black:   '#575b70'
+    red:     '#ff6e67'
+    green:   '#5af78e'
+    yellow:  '#f4f99d'
+    blue:    '#caa9fa'
+    magenta: '#ff92d0'
+    cyan:    '#9aedfe'
+    white:   '#e6e6e6'
