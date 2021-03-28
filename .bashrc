@@ -89,6 +89,7 @@ if ${use_color} ; then
 	alias filesize='du -sh'
 	alias ffmpeg-recordscreen='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -vb 20M out.mp4'
 	alias ffmpeg-recordmic='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -f alsa -i hw:0 -vb 20M out.mp4'
+	alias tai='tai -S ascii --table " ,.,:,x,@"'
 
 	#gentoo specific
 	alias emerge@world='emerge -uDN @world && emerge @module-rebuild'
