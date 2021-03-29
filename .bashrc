@@ -73,15 +73,14 @@ if ${use_color} ; then
 
 	# aliases
 	#neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg # requires jp2a and imagemagick
-	pfetch
-	acpi
+	mfetch
 	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
 	alias ls='ls -la'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
 	alias check_shell="echo $0"
-	alias sdn='shutdown now'
+	alias reboot='doas reboot'
 	alias vim='nvim'
 	alias mpv='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"'
 	alias gpg-create='gpg -c --no-symkey-cache --cipher-algo AES256'
@@ -95,7 +94,7 @@ if ${use_color} ; then
 	alias emerge@world='emerge -uDN @world && emerge @module-rebuild'
 	alias emerge@worldtime='emerge -pU @world | genlop --pretend'
 	alias list='qlist -IRv'
-	alias emerge='emerge -aq'
+	#alias emerge='emerge -aq'
 	alias qdepends='qdepends -Q '%{CAT}/%{PN}:%{SLOT}' ^'
 	alias emerge-conflict='emerge --update --deep --with-bdeps=y --newuse'
 else
