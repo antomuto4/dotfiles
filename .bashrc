@@ -73,7 +73,7 @@ if ${use_color} ; then
 
 	# aliases
 	#neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg # requires jp2a and imagemagick
-	mfetch
+	sf
 	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
 	alias ls='ls -la'
 	alias grep='grep --colour=auto'
@@ -89,6 +89,7 @@ if ${use_color} ; then
 	alias ffmpeg-recordscreen='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -vb 20M out.mp4'
 	alias ffmpeg-recordmic='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -f alsa -i hw:0 -vb 20M out.mp4'
 	alias tai='tai -S ascii --table " ,.,:,x,@"'
+	alias dmenu="dmenu_run -fn 'Iosevka' -nb '#282a36' -nf '#bd93f9' -sb '#282a36' -sf '#f8f8f2'"
 
 	#gentoo specific
 	alias emerge@world='emerge -uDN @world && emerge @module-rebuild'
