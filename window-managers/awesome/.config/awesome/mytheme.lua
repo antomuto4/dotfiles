@@ -25,16 +25,16 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "Iosevka Light"
+theme.font          = "Iosevka Light 10"
 
-theme.bg_normal     = "#0E131A"
-theme.bg_focus      = "#3A4453"
-theme.bg_urgent     = "#0E131A"
-theme.bg_minimize   = "#0E131A"
+theme.bg_normal     = "#282a36"
+theme.bg_focus      = "#bd93f9"
+theme.bg_urgent     = "#bd93f9"
+theme.bg_minimize   = "#282a36"
 theme.bg_systray    = theme.bg_normal
 
 --theme.fg_normal     = "#4c566a" 
-theme.fg_normal     = "#3A4453" 
+theme.fg_normal     = "#f8f8f2" 
 --theme.fg_focus      = "#616e88"
 theme.fg_focus      = "#0E131A" 
 theme.fg_urgent     = "#3A4453"
