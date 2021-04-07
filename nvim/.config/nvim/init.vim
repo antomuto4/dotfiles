@@ -13,4 +13,4 @@ call plug#end()
 
 " --Auto Command--
 "autocmd VimEnter * NERDTree
-autocmd VimEnter * Goyo
+autocmd VimEnter * Goyo 90%+90%x50%-0%
