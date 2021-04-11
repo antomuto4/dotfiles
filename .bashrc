@@ -72,24 +72,19 @@ if ${use_color} ; then
 	fi
 
 	# aliases
-	#neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg # requires jp2a and imagemagick
-	alias neofetch='neofetch --jp2a ~/Pictures/c6b2fb44c62c1eea0a02dc72b56c2124Nord.jpg'
+	#neofetch --jp2a ~/Pictures/picture.jpg # requires jp2a and imagemagick
 	alias ls='ls -la'
 	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
 	alias check_shell="echo $0"
-	alias sdn='shutdown now'
 	alias vim='nvim'
-	alias mpv='mpv --ytdl-format="bestvideo[height<=?1080]+bestaudio/best"'
 	alias gpg-create='gpg -c --no-symkey-cache --cipher-algo AES256'
 	alias nvidia-run='env __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia'
 	alias filesize='du -sh'
 	alias ffmpeg-recordscreen='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -vb 20M out.mp4'
 	alias ffmpeg-recordmic='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -f alsa -i hw:0 -vb 20M out.mp4'
 	alias tai='tai -S ascii --table " ,.,:,x,@"'
-	alias spotify='/home/antomuto/Documents/spicetify-cli/spicetify apply enable-devtool' # run as su
-
 	#gentoo specific
 	alias emerge@world='emerge -uDN @world && emerge @module-rebuild'
 	alias emerge@worldtime='emerge -pU @world | genlop --pretend'
