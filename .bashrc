@@ -86,13 +86,13 @@ if ${use_color} ; then
 	alias ffmpeg-recordmic='ffmpeg -r 25 -f x11grab -s 1920x1080 -i :0.0+1600,0 -f alsa -i hw:0 -vb 20M out.mp4'
 	alias tai='tai -S ascii --table " ,.,:,x,@"'
 	#gentoo specific
-   alias upd8='emerge -uDN @world && emerge @module-rebuild'
-   alias upd8time='emerge -pU @world | genlop --pretend'
-   alias list='qlist -IRv'
-   #alias emerge='emerge -aq'
-   alias qdepends='qdepends -Q '%{CAT}/%{PN}:%{SLOT}' ^'
-   #alias conflict="emerge --ignore-default-opts -va1 --keep-going $( qdepends -CQqqF '%{CAT}/%{PN}:%{SLOT}' '^virtual/libintl' )"
-   alias conflict-final='emerge --update --deep --with-bdeps=y --newuse'
+	alias upd8='emerge -uDN @world && emerge @module-rebuild'
+	alias upd8time='emerge -pU @world | genlop --pretend'
+	alias list='qlist -IRv'
+	#alias emerge='emerge -aq'
+	alias qdepends='qdepends -Q '%{CAT}/%{PN}:%{SLOT}' ^'
+	#alias conflict="emerge --ignore-default-opts -va1 --keep-going $( qdepends -CQqqF '%{CAT}/%{PN}:%{SLOT}' '^virtual/libintl' )"
+	alias conflict-final='emerge --update --deep --with-bdeps=y --newuse'
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
