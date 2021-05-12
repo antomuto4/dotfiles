@@ -1,16 +1,15 @@
 " ~/.config/nvim/init.vim
-"set nu
+set nu
 syntax on
 
 " --Plug--
 call plug#begin('~/local/share/nvim/plugged')
-
 Plug 'junegunn/goyo.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 
 call plug#end()
-
 " --Auto Command--
-"autocmd VimEnter * NERDTree
-autocmd VimEnter * Goyo 60%x50%
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+"autocmd VimEnter * Goyo 60%x50%
