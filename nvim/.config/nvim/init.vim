@@ -8,8 +8,11 @@ Plug 'junegunn/goyo.vim'
 Plug 'preservim/nerdtree'
 
 call plug#end()
-" --Auto Command--
+" --Keybindings--
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-"autocmd VimEnter * Goyo 60%x50%
+nnoremap <C-g> :Goyo 60%x50%
+" --Auto Command--
+colorscheme pablo
+set mouse=a
