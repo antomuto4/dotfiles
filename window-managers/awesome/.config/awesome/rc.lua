@@ -25,8 +25,8 @@ local awful = require("awful")
 require("awful.autofocus")
 -- Widget and layout library
 local wibox = require("wibox")
-local volumebar_widget = require("awesome-wm-widgets.volumebar-widget.volumebar")
-local battery_widget = require("awesome-wm-widgets.battery-widget.battery")
+local volumebar_widget = require("awesome-wm-widgets.volume-widget.volume")
+local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 -- Theme handling library
 local beautiful = require("beautiful")
 -- Notification library
@@ -218,8 +218,8 @@ awful.screen.connect_for_each_screen(function(s)
 
 
     -- Create the wibox
-	--s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal, height = "19"})
-	s.mywibox = awful.wibar({ position = "bottom", screen = s, bg = beautiful.bg_normal, height = "20" })
+	s.mywibox = awful.wibar({ position = "top", screen = s, bg = beautiful.bg_normal, height = "19"})
+	--s.mywibox = awful.wibar({ position = "bottom", screen = s, bg = beautiful.bg_normal, height = "20" })
     -- Add widgets to the wibox
     s.mywibox:setup {
         layout = wibox.layout.align.horizontal,
@@ -231,9 +231,6 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.mytasklist, -- Middle widget
         { -- Right widgets
-            --spotify_widget({
-        	--font = 'Iosevka Light 10'	
-        	--}),
         	volumebar_widget{
 			type='arc'
 		},
@@ -357,6 +354,7 @@ globalkeys = gears.table.join(
                 {description = "toggle statusbar"}
       ),
       	
+awful.key({ }, "Print", function () awful.util.spawn("maim /home/antomuto/out.png") end), 
       
     awful.key({ modkey }, "x",
               function ()
@@ -537,23 +535,6 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
 
-     --
-     --Applications on what screen
-
-     -- Set Firefox to always map on the tag named "2" on screen 1.
-
-     { rule = { class = "ungoogled-chromium" },
-       properties = { screen = 2, tag = "1" } },
-
-	-- set spotify
-
-	{ rule = {class = "Spotify" },
-	properties = { screen = 2, tag = "4" } },
-
-	-- set discord
-
-	{ rule = {class = "discord" },
-	properties = { screen = 1, tag = "1" } },
 }
 -- }}}
 
@@ -623,5 +604,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 --Autostart Applications
 awful.spawn.with_shell("./.screenlayout/screen.sh")
-awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/manga/OquCW2SQ-wallha.comNord.jpg")
+awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/city/japan/masaaki.png")
+awful.spawn.with_shell("fcitx")
+awful.spawn.with_shell("dunst &")
 
