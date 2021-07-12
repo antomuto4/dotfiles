@@ -80,7 +80,7 @@ modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
-    --awful.layout.suit.floating,
+    awful.layout.suit.floating,
     awful.layout.suit.tile,
     --awful.layout.suit.tile.left,
     --awful.layout.suit.tile.bottom,
@@ -342,7 +342,7 @@ globalkeys = gears.table.join(
     -- Prompt
 
     awful.key({ modkey },            "d",     function ()
-    			awful.util.spawn("dmenu_run -fn 'Iosevka' -nb '#282a36' -nf '#bd93f9' -sb '#282a36' -sf '#f8f8f2'") end,
+    			awful.util.spawn("dmenu_run -fn 'Iosevka' -nb '#1d1f21' -nf '#384b48' -sb '#1d1f21' -sf '#f8f8f2'") end,
     		 -- awful.util.spawn("rofi -show") end,
               {description = "dmenu run", group = "launcher"}),
 
@@ -354,7 +354,7 @@ globalkeys = gears.table.join(
                 {description = "toggle statusbar"}
       ),
       	
-awful.key({ }, "Print", function () awful.util.spawn("maim /home/antomuto/out.png") end), 
+awful.key({ }, "Print", function () awful.util.spawn("import -window root out.png") end), 
       
     awful.key({ modkey }, "x",
               function ()
@@ -604,7 +604,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 --Autostart Applications
 awful.spawn.with_shell("./.screenlayout/screen.sh")
-awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/city/japan/masaaki.png")
 awful.spawn.with_shell("fcitx")
 awful.spawn.with_shell("dunst &")
-
+awful.spawn.with_shell("feh --bg-fill ~/.wallpapers/city/japan/masaaki.png")
