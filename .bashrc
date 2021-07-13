@@ -93,6 +93,10 @@ if ${use_color} ; then
 	alias qdepends='qdepends -Q '%{CAT}/%{PN}:%{SLOT}' ^'
 	#alias conflict="emerge --ignore-default-opts -va1 --keep-going $( qdepends -CQqqF '%{CAT}/%{PN}:%{SLOT}' '^virtual/libintl' )"
 	alias conflict-final='emerge --update --deep --with-bdeps=y --newuse'
+	#personal notes
+	#
+	#video trimming
+	#ffmpeg -i input.mp4 -ss (starting time) 00:08:45.3 -t (how long you want after that) 5 -c:v copy -c:a aac output.mp4
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
